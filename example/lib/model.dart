@@ -26,18 +26,18 @@ class SeatSettings {
       SeatSettings(
         autoHeatTime: autoHeatTime ?? this.autoHeatTime,
         autoHeatTempThreshold:
-            autoHeatTempThreshold ?? this.autoHeatTempThreshold,
+        autoHeatTempThreshold ?? this.autoHeatTempThreshold,
         autoVentilationTime: autoVentilationTime ?? this.autoVentilationTime,
         autoVentilationTempThreshold:
-            autoVentilationTempThreshold ?? this.autoVentilationTempThreshold,
+        autoVentilationTempThreshold ?? this.autoVentilationTempThreshold,
       );
 
   factory SeatSettings.defaultSettings() => SeatSettings(
-        autoHeatTime: 10,
-        autoHeatTempThreshold: 15,
-        autoVentilationTime: 30,
-        autoVentilationTempThreshold: 25,
-      );
+    autoHeatTime: 10,
+    autoHeatTempThreshold: 15,
+    autoVentilationTime: 30,
+    autoVentilationTempThreshold: 25,
+  );
 
   factory SeatSettings.fromJson(Map<String, dynamic> json) =>
       _$SeatSettingsFromJson(json);
